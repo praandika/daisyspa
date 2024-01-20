@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('email');
             $table->string('facebook')->nullable();
             $table->string('instagram')->nullable();
+            $table->string('link');
             $table->timestamps();
         });
     }

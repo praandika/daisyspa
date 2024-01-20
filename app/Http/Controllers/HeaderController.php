@@ -35,6 +35,7 @@ class HeaderController extends Controller
         $data->email = $request->email;
         $data->facebook = $request->facebook;
         $data->instagram = $request->instagram;
+        $data->link = $request->link;
         $data->save();
 
         toast('Header successfully added','success');
@@ -62,7 +63,17 @@ class HeaderController extends Controller
      */
     public function update(Request $request, Header $header)
     {
-        //
+        $data = Header::find($header->id);
+        $data->location = $request->location;
+        $data->phone = $request->phone;
+        $data->email = $request->email;
+        $data->facebook = $request->facebook;
+        $data->instagram = $request->instagram;
+        $data->link = $request->link;
+        $data->update();
+
+        toast('Header has been updated!','success');
+        return redirect()->back();
     }
 
     /**

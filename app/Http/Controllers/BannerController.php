@@ -39,6 +39,7 @@ class BannerController extends Controller
         $data->title = $request->title;
         $data->subtitle = $request->subtitle;
         $data->description = $request->description;
+        $data->link = $request->link;
         $img = $request->file('image');
         $img_file = time()."_".$img->getClientOriginalName();
         $dir_img = 'img';
@@ -82,6 +83,7 @@ class BannerController extends Controller
         $data->title = $request->title;
         $data->subtitle = $request->subtitle;
         $data->description = $request->description;
+        $data->link = $request->link;
         $data->status = $status;
         if ($request->hasFile('image')) {
             if ($data->image != '' && $data->image != 'banner.jpg') {
