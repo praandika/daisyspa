@@ -10,7 +10,7 @@
                         <a href="#" class="me-4 text-light"><i
                                 class="fas fa-phone-alt text-primary me-2"></i>+62857-3735-5900</a>
                         <a href="#" class="text-light"><i
-                                class="fas fa-envelope text-primary me-2"></i>daisyspabali@gmail.com</a>
+                                class="fas fa-envelope text-primary me-2"></i>balidaisyspa@gmail.com</a>
                     </div>
 
                 </div>

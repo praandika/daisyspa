@@ -10,7 +10,7 @@
         <div class="carousel-inner" role="listbox">
         @forelse($data as $o)
             <div class="carousel-item {{ $o->id == $active[0] ? 'active' : '' }}">
-                <img src="{{ asset('img/'.o->$img.'') }}" class="img-fluid" alt="{{ $o->alt }}">
+                <img src="{{ asset('img/'.$o->$image.'') }}" class="img-fluid" alt="{{ $o->alt }}">
                 <div class="carousel-caption">
                     <div class="p-3" style="max-width: 900px;">
                         <h4 class="text-primary text-uppercase mb-3">{{ $o->subtitle }}</h4>
